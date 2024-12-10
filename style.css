@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('https://media.gettyimages.com/id/1406147022/video/an-abstract-black-and-white-xo-background-tic-tac-toe-abstract-background-3d-graphics-for-a.jpg?s=640x640&k=20&c=dslGdtyBZBJkLJ0OiEs8pjxRhGeNWLSNU1cz5gYfvcU=');
+  background-size: 90%;
+  background-position: center;
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5em;
+  color:brown;
+  margin: 0;
+  padding: 10px;
+  box-shadow:brown; 
+  width: 100%; 
+  text-align: center;
+  z-index: 1000; 
+}
+
+
+#game-container {
+  text-align: center;
+  background:brown;
+  border: 3px dotted #ffc107;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: black;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: black;
+}
+
+.selection button,
+#reset {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color:brown;
+  border: 3px dotted #ffc107;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.selection button:hover,
+#reset:hover {
+  background-color:gray;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background:white;
+  border: 3px dotted #ffc107;
+  font-size: 2em;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color:#555;
+}
+
+.cell:active {
+  background-color: #e0e0e0;
+}
+
+#reset {
+  display: none; 
+}
+
+.selection {
+  margin-bottom: 20px;
+}
